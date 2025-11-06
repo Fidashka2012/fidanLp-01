@@ -16,7 +16,7 @@
 import math
 
 
-a = float(input("a-nı daxil et: "))
+a = float(input("a-ni daxil et: "))
 b = float(input("b-ni daxil et: "))
 c = float(input("c-ni daxil et: "))
 
