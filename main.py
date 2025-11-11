@@ -35,3 +35,59 @@
 # else:
 #     print("Həqiqi kök yoxdur (diskriminant mənfidir).")
 
+#task1
+# rasimismylv_list = [1 , 2, 3, 4, 5]
+# print(rasimismylv_list)
+
+# #task2
+# rasimismylv_list = ['salam', 2.5, 3, 7 , 'alaikum']
+
+# print(rasimismylv_list[0])
+
+# # #task3
+# rasimismylv_list = [1, 2, 3, 4, 5]
+# print(rasimismylv_list[4])
+
+# # #task4
+# rasimismylv_list = [1, 2, 3, 4, 5]
+
+# rasimismylv_list[1] = 100
+
+# print(rasimismylv_list)
+
+# # #task5
+# rasimismylv_list = [1, 2, 3, 4, 5]
+
+# rasimismylv_list.append(1000000000000)
+
+# print(rasimismylv_list)
+
+# # #task6
+# rasimismylv_list = [1, 2, 3, 4, 5]
+# rasimismylv_list.pop(4)
+
+# print(rasimismylv_list)
+
+# #task7
+# rasimismylv_list = [1, 2, 3, 4, 5]
+# print(rasimismylv_list[0] + rasimismylv_list[1] + rasimismylv_list[2] + rasimismylv_list[3] + rasimismylv_list[4])
+
+# #task8
+
+# rasimismylv_list = ["Rasim", "Fidan", "Mehdi", "Zakir"]
+
+# print(len(rasimismylv_list))
+
+# #task9
+# adlar = ["Rasim", "Fidan", "Mehdi", "Zakir"]
+# for ad in adlar:
+#     print(f"Salam Eleykum, {ad}! netersinız")
+
+# #task10
+
+# meyvecikler = ["feyxua" , "banan", "qreyfrut o turs olan portagal vare o"]
+
+# print(meyvecikler)
+
+
+
