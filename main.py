@@ -13,25 +13,25 @@
 
 #salam baji qurban
 
-import math
+# import math
 
 
-a = float(input("a-ni daxil et: "))
-b = float(input("b-ni daxil et: "))
-c = float(input("c-ni daxil et: "))
+# a = float(input("a-ni daxil et: "))
+# b = float(input("b-ni daxil et: "))
+# c = float(input("c-ni daxil et: "))
 
 
-D = b**2 - 4*a*c
-print(f"Diskriminant D = {D}")
+# D = b**2 - 4*a*c
+# print(f"Diskriminant D = {D}")
 
 
-if D > 0:
-    x1 = (-b + math.sqrt(D)) / (2*a)
-    x2 = (-b - math.sqrt(D)) / (2*a)
-    print(f"İki həll var: x₁ = {x1}, x₂ = {x2}")
-elif D == 0:
-    x = -b / (2*a)
-    print(f"Bir dənə həll var: x = {x}")
-else:
-    print("Həqiqi kök yoxdur (diskriminant mənfidir).")
+# if D > 0:
+#     x1 = (-b + math.sqrt(D)) / (2*a)
+#     x2 = (-b - math.sqrt(D)) / (2*a)
+#     print(f"İki həll var: x₁ = {x1}, x₂ = {x2}")
+# elif D == 0:
+#     x = -b / (2*a)
+#     print(f"Bir dənə həll var: x = {x}")
+# else:
+#     print("Həqiqi kök yoxdur (diskriminant mənfidir).")
 
