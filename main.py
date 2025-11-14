@@ -179,4 +179,43 @@
 # birlesmis_list = list1 + list2
 # print(birlesmis_list)
 
-# #task22 - helpppp
+# # #task22
+# ededler = [1, 5, 2, 8, 5, 1, 9, 2, 10, 8]
+# ededlerin_silinmesi = list(set(ededler))
+# print(ededlerin_silinmesi)
+
+# #task23
+# ededler = [40, 10, 30, 20]
+# ededler.sort()
+# print(ededler)
+
+# #task24
+# ededler = [1, 2, 3, 4, 5, 6]
+# print(ededler[5], ededler[2])
+
+# #task25
+# ededler = [67, 69, 10, 63, 49, 50, 65, 33]
+# boyuk_index = []
+
+# for index, deyer in enumerate(ededler):
+#     if deyer > 50:
+#         boyuk_index.append(index)
+
+# print(boyuk_index)
+
+# #task26 helpppp
+
+#task27
+# ededler = [25, 62, 10, 85, 49, 50, 77, 33]
+# vurulan_ededler = [indeks * deyer for indeks, deyer in enumerate(ededler)]
+# print(vurulan_ededler)
+
+# #task28helpppp
+
+# # #task29
+# ededler = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+# ededler[0], ededler[-1] = ededler[-1], ededler[0]
+# print(ededler)
+
+#task30 - palindrom nedi bilmirem
+#bu qederrrrrr
