@@ -203,19 +203,44 @@
 
 # print(boyuk_index)
 
-# #task26 helpppp
+# #task26
+#help me i am so tired i wanna die
 
-#task27
+
+#task27 mellim renati yene gordum deirki qardas qardasa telefon alar
 # ededler = [25, 62, 10, 85, 49, 50, 77, 33]
 # vurulan_ededler = [indeks * deyer for indeks, deyer in enumerate(ededler)]
 # print(vurulan_ededler)
 
-# #task28helpppp
+# # #task28
+# her_ededin_indeksine_vur = [5, 15, 30, 45, 60]
+# vurulan_ededler = [indeks * deyer for indeks, deyer in enumerate(her_ededin_indeksine_vur)]
+# print(vurulan_ededler)
 
 # # #task29
 # ededler = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
 # ededler[0], ededler[-1] = ededler[-1], ededler[0]
 # print(ededler)
 
-#task30 - palindrom nedi bilmirem
-#bu qederrrrrr
+#task30 - biraz google yardimi ile hell etdim
+
+ededler = [121, 123, 343, 90, 111, 45654, 789, 9]
+
+
+palindrom_reqemler = []
+
+
+for sayi in ededler:
+    
+    eded_str = str(sayi)
+    
+ 
+    eded_ters_str = eded_str[::-1]
+
+    if eded_str == eded_ters_str:
+      
+        palindrom_reqemler.append(sayi)
+
+
+print(f"palindrom_reqemler: {palindrom_reqemler}")
+
