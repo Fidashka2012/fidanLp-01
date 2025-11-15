@@ -35,6 +35,11 @@
 # else:
 #     print("Həqiqi kök yoxdur (diskriminant mənfidir).")
 
+
+#-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+#for 16.11.2025
+
+
 #task1
 # rasimismylv_list = [1 , 2, 3, 4, 5]
 # print(rasimismylv_list)
@@ -224,23 +229,23 @@
 
 #task30 - biraz google yardimi ile hell etdim
 
-ededler = [121, 123, 343, 90, 111, 45654, 789, 9]
+# ededler = [121, 123, 343, 90, 111, 45654, 789, 9]
 
 
-palindrom_reqemler = []
+# palindrom_reqemler = []
 
 
-for sayi in ededler:
+# for sayi in ededler:
     
-    eded_str = str(sayi)
+#     eded_str = str(sayi)
     
  
-    eded_ters_str = eded_str[::-1]
+#     eded_ters_str = eded_str[::-1]
 
-    if eded_str == eded_ters_str:
+#     if eded_str == eded_ters_str:
       
-        palindrom_reqemler.append(sayi)
+#         palindrom_reqemler.append(sayi)
 
 
-print(f"palindrom_reqemler: {palindrom_reqemler}")
+# print(f"palindrom_reqemler: {palindrom_reqemler}")
 
