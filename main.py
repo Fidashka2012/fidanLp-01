@@ -238,7 +238,7 @@
 # for sayi in ededler:
     
 #     eded_str = str(sayi)
-    
+     
  
 #     eded_ters_str = eded_str[::-1]
 
