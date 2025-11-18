@@ -94,7 +94,7 @@
 
 # print(meyvecikler)
 
-
+# ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 #task11
 # ededler = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
 # for eded in ededler:
@@ -209,7 +209,7 @@
 # print(boyuk_index)
 
 # #task26
-#help me i am so tired i wanna die
+#✨🎀help me i am so tired i wanna die ✨🎀
 
 
 #task27 mellim renati yene gordum deirki qardas qardasa telefon alar
@@ -227,7 +227,7 @@
 # ededler[0], ededler[-1] = ededler[-1], ededler[0]
 # print(ededler)
 
-#task30 - biraz google yardimi ile hell etdim
+#task30 - ✨🎉🎀biraz google yardimi ile hell etdim✨🎉🎀
 
 # ededler = [121, 123, 343, 90, 111, 45654, 789, 9]
 
