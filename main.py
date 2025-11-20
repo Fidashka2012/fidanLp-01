@@ -249,3 +249,8 @@
 
 # print(f"palindrom_reqemler: {palindrom_reqemler}")
 
+
+
+
+#task 31
+# hesne yazammadim
