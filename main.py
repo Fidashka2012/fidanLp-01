@@ -235,16 +235,16 @@
 # palindrom_reqemler = []
 
 
-# for sayi in ededler:
+# for eded in ededler:
     
-#     eded_str = str(sayi)
+#     eded_str = str(eded)
      
  
 #     eded_ters_str = eded_str[::-1]
 
 #     if eded_str == eded_ters_str:
       
-#         palindrom_reqemler.append(sayi)
+#         palindrom_reqemler.append(eded)
 
 
 # print(f"palindrom_reqemler: {palindrom_reqemler}")
@@ -252,15 +252,16 @@
 
 
 
-#task 31
-# n = int(input("ededi daxil et: "))
-# steps = 0
+# task 31
+n = int(input("ededi daxil et: "))
+steps = 0
 
-# while n != 0:
-#     if n % 2 == 0:
-#         n = n // 2
-#     else:
-#         n = n - 1
-#     steps += 1
+while n != 0:
+    if n % 2 == 0:
+        n = n // 2
+    else:
+        n = n - 1
+    steps += 1
 
-# print(f"0-a catmaq ucun {steps} addim var")
+print(f"0-a catmaq ucun {steps} addim var de ne isdirsen brouu")
+
