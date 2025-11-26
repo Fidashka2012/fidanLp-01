@@ -292,7 +292,6 @@
 
 #task 34
 
-
 mehsullar_siyahisi = ["Kepka", "Koynek", "Shalvar"]
 
 qiymet = {
@@ -307,37 +306,44 @@ anbar = {
     "Shalvar": 38
 }
 
+balans = int(input("Balansinizi daxil edin: "))
 
-alinan = input("Salam necesiz ne almaq istirdiz ")
+alinan = input("Salam necesiz ne almaq istirdiz: ")
 
 def anbar_yoxlama(mehsul_adi):
+    global balans
     
     if mehsul_adi in mehsullar_siyahisi:
-        
         print(f"Qiymeti: {qiymet[mehsul_adi]} AZN")
         print(f"Anbarda qalan say: {anbar[mehsul_adi]}")
 
-     
-        sayi = int(input(f"Nece dene {mehsul_adi} isteyirsiz "))
-        
+        sayi = int(input(f"Nece dene {mehsul_adi} isteyirsiz: "))
+
         if sayi > anbar[mehsul_adi]:
             print(f"malesef, anbarda sadece {anbar[mehsul_adi]} eded {mehsul_adi} qalib.")
-            
+
         elif sayi <= 0:
             print("sifirdenedise ged")
-            
+
         else:
-            anbar[mehsul_adi] -= sayi
             cemi_qiymet = sayi * qiymet[mehsul_adi]
-            print(f"Sifarisiniz ugurla tamamlandi cemi: {cemi_qiymet} AZN")
-            print(f"Anbarda qalan yeni say: {anbar[mehsul_adi]}")
-            
+
+            if cemi_qiymet > balans:
+                print(f"Balansiniz catmir! Sizin balans: {balans} AZN, lazim olan: {cemi_qiymet} AZN")
+            else:
+                balans -= cemi_qiymet
+                anbar[mehsul_adi] -= sayi
+
+                print(f"Sifarisiniz ugurla tamamlandi! Cemi: {cemi_qiymet} AZN")
+                print(f"Yeni balansiniz: {balans} AZN")
+                print(f"Anbarda qalan yeni say: {anbar[mehsul_adi]}")
+
     else:
-        
         print(f"Bagishlayin, '{mehsul_adi}' mehsulu anbarimizda yoxdur.")
-        
 
 anbar_yoxlama(alinan)
+
+
   
 
     
