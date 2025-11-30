@@ -289,19 +289,21 @@
 #        print("aye adam kimi yazda")
 
 # cut()
+#------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+#for 30.11.2025
 
 #task 34
 
-# mehsullar_siyahisi = ["Kepka", "Koynek", "Shalvar"]
+# mehsullar_siyahisi = ["Don", "Koynek", "Shalvar"]
 
 # qiymet = {
-#     "Kepka": 5,
+#     "Don": 5,
 #     "Koynek": 20,
 #     "Shalvar": 30
 # }
 
 # anbar = {
-#     "Kepka": 14,
+#     "Don": 14,
 #     "Koynek": 20,
 #     "Shalvar": 38
 # }
@@ -323,7 +325,7 @@
 #             print(f"malesef, anbarda sadece {anbar[mehsul_adi]} eded {mehsul_adi} qalib.")
 
 #         elif sayi <= 0:
-#             print("sifirdenedise ged")
+#             print("ged burdan anormall")
 
 #         else:
 #             cemi_qiymet = sayi * qiymet[mehsul_adi]
