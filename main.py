@@ -346,25 +346,25 @@
 # anbar_yoxlama(alinan)
 
 #task35
-# import random
+import random
 
-# def tapda_day():
-#     random_reqem = random.randint(1, 10)
-#     cehd_sayi = 0
+def tapda_day():
+    random_reqem = random.randint(1, 10)
+    cehd_sayi = 0
 
-#     print("1 ile 10 arasinda random reqem tutmusam. Tap!!!!!!!!!")
+    print("1 ile 10 arasinda random reqem tutmusam. Tap!!!!!!!!!")
 
-#     while True:
-#         istifadeci = int(input("Reqemi yaz: "))
-#         cehd_sayi += 1
+    while True:
+        istifadeci = int(input("Reqemi yaz: "))
+        cehd_sayi += 1
 
-#         if istifadeci > random_reqem:
-#             print("Asagi dus")
-#         elif istifadeci < random_reqem:
-#             print("Yuxari qalx")
-#         else:
-#             print("Halaldi broo!!!")
-#             print(f"{cehd_sayi} cehde tapdin")
-#             break
+        if istifadeci > random_reqem:
+            print("Asagi dus")
+        elif istifadeci < random_reqem:
+            print("Yuxari qalx")
+        else:
+            print("Halaldi broo!!!")
+            print(f"{cehd_sayi} cehde tapdin")
+            break
 
-# tapda_day()
+tapda_day()
