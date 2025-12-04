@@ -370,27 +370,17 @@
 # tapda_day()
 
 #-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-#imtahan task
-def users():
-    name = input("enter your name: ").lower()
-    if name == "alice":
-        password = input("enter your password: ")
-        if password == "1234":
-            print("Welcome")
-        else:
-            print("password is incorrect")
-    elif name == "bob":
-        psw2 = input("enter your password: ")
-        if psw2 == "qwerty":
-            print("welcome")
-    elif name == "john":
-        psw3 = input("enter your password: ")
-        if psw3 == "pass":
-            print("welcome")
-    else:
-        print("your account not find")
-        
+# #imtahan task
+# users = {"alice": "1234", "bob": "qwerty", "john": "pass"}
 
+# username = input("enter your name: ")
+# password = input("enter your password: ")
 
-users()
+# if username in users:
+#     if users[username] == password:
+#         print("account verified!")
+#     else:
+#         print("psw is false!")
+# else:
+#     print("account can't find!")
 
