@@ -371,16 +371,15 @@
 
 #-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 # #imtahan task
-# users = {"alice": "1234", "bob": "qwerty", "john": "pass"}
+users = {"alice": "1234", "bob": "qwerty", "john": "pass", "fidan": "fatily"}      
 
-# username = input("enter your name: ")
-# password = input("enter your password: ")
+username = input("enter your name: ")
+password = input("enter your password: ")
 
-# if username in users:
-#     if users[username] == password:
-#         print("account verified!")
-#     else:
-#         print("psw is false!")
-# else:
-#     print("account can't find!")
-
+if username in users:
+    if users[username] == password:
+        print("account verified!")
+    else:
+        print("password is false!")
+else:
+    print("account can't find!")
