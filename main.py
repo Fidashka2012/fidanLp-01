@@ -370,16 +370,40 @@
 # tapda_day()
 
 #-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-# #imtahan task
-users = {"alice": "1234", "bob": "qwerty", "john": "pass", "fidan": "fatily"}      
+# # #imtahan task
+# users = {"alice": "1234", "bob": "qwerty", "john": "pass", "fidan": "fatily"}      
 
-username = input("enter your name: ")
-password = input("enter your password: ")
+# username = input("enter your name: ")
+# password = input("enter your password: ")
 
-if username in users:
-    if users[username] == password:
-        print("account verified!")
-    else:
-        print("password is false!")
-else:
-    print("account can't find!")
+# if username in users:
+#     if users[username] == password:
+#         print("account verified!")
+#     else:
+#         print("password is false!")
+# else:
+#     print("account can't find!")
+
+# at_sesi = "iha iha"
+
+# pisik_sesi = "meow meow"
+
+# it_sesi = "hov hov"
+
+# iney_sesi = "mu mu"
+
+# ilan_sesi = "fs fs"
+
+# istek = input("Bir heyvan dee mende sesin atim meslen at, psiy, it, iney, ilan ve s.: ").lower()
+# if istek == "at":
+#     print(at_sesi)
+# elif istek == "pisik":
+#     print(pisik_sesi)
+# elif istek == "it":
+#     print(it_sesi)
+# elif istek == "iney":
+#     print(iney_sesi)
+# elif istek == "ilan":
+#     print(ilan_sesi)
+# else:
+#     print("a gul kimi heyvanlar vermisemde")
