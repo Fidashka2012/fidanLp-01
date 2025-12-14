@@ -407,3 +407,25 @@
 #     print(ilan_sesi)
 # else:
 #     print("a gul kimi heyvanlar vermisemde")
+
+
+
+import random
+
+def banka():
+    user_balance = random.randint(1, 200)
+    print(f"Balansiniz: {user_balance} manat")
+
+    cixmaq_pul = int(input("Salam! Fidosh Bankaya xosh gelibsiz. Ne qeder pul goturmek isteyirsiniz?: "))
+
+    if cixmaq_pul < user_balance:
+        new_balance = user_balance - cixmaq_pul
+        print(f"Kartinizdan {cixmaq_pul} manat pul cixdi. Yeni balansiniz: {new_balance} manatdir.")
+
+    elif cixmaq_pul > user_balance:
+        print("Bu qeder pulu cixartmaga balansiniz catmir.")
+
+    else:
+        print("Balansiniz tam sifirlandi.")
+
+banka()
