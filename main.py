@@ -426,6 +426,6 @@ def banka():
         print("Bu qeder pulu cixartmaga balansiniz catmir.")
 
     else:
-        print("Balansiniz tam sifirlandi.")
+        print("Balansinizdan butun pulu cixartdiniz ve balansuvuz tam sifirlandi.")
 
 banka()
