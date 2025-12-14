@@ -433,3 +433,19 @@
 
 
 # task 38 yazammirammm
+#task 39
+def reqemlerin_kvadrat_cemi():
+    while True:
+        deyer = input("Bir reqem daxil et: ")
+
+        if not deyer.isdigit():
+            print("Xeta! Zəhmət olmasa yalnız reqem daxil et.")
+        else:
+            cem = 0
+            for reqem_bir_bir in deyer:
+                cem += int(reqem_bir_bir) ** 2
+            return cem
+
+
+netice = reqemlerin_kvadrat_cemi()
+print(f"cavab {netice}")
