@@ -370,7 +370,7 @@
 # tapda_day()
 
 #-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-# # #imtahan task
+# # #imtahan - task 35
 # users = {"alice": "1234", "bob": "qwerty", "john": "pass", "fidan": "fatily"}      
 
 # username = input("enter your name: ")
@@ -384,6 +384,7 @@
 # else:
 #     print("account can't find!")
 
+# task 36
 # at_sesi = "iha iha"
 
 # pisik_sesi = "meow meow"
@@ -408,24 +409,27 @@
 # else:
 #     print("a gul kimi heyvanlar vermisemde")
 
+#task 37
+
+# import random
+
+# def banka():
+#     user_balance = random.randint(1, 200)
+
+#     cixmaq_pul = int(input("Salam! Fidosh Bankaya xosh gelibsiz. Ne qeder pul goturmek isteyirsiniz?: "))
+
+#     if cixmaq_pul < user_balance:
+#         new_balance = user_balance - cixmaq_pul
+#         print(f"Kartinizdan {cixmaq_pul} manat pul cixdi.")
+#         print(f"Yeni balansiniz: {new_balance} manatdir.")
+
+#     elif cixmaq_pul > user_balance:
+#         print("Bu qeder pulu cixartmaga balansiniz catmir.")
+
+#     else:
+#         print("Balansiniz tam sifirlandi.")
+
+# banka()
 
 
-import random
-
-def banka():
-    user_balance = random.randint(1, 200)
-    print(f"Balansiniz: {user_balance} manat")
-
-    cixmaq_pul = int(input("Salam! Fidosh Bankaya xosh gelibsiz. Ne qeder pul goturmek isteyirsiniz?: "))
-
-    if cixmaq_pul < user_balance:
-        new_balance = user_balance - cixmaq_pul
-        print(f"Kartinizdan {cixmaq_pul} manat pul cixdi. Yeni balansiniz: {new_balance} manatdir.")
-
-    elif cixmaq_pul > user_balance:
-        print("Bu qeder pulu cixartmaga balansiniz catmir.")
-
-    else:
-        print("Balansinizdan butun pulu cixartdiniz ve balansuvuz tam sifirlandi.")
-
-banka()
+# task 38 yazammirammm
