@@ -441,11 +441,13 @@ def reqemlerin_kvadrat_cemi():
         if not deyer.isdigit():
             print("Xeta! Zəhmət olmasa yalnız reqem daxil et.")
         else:
+            reqem = int(deyer)
             cem = 0
-            for reqem_bir_bir in deyer:
-                cem += int(reqem_bir_bir) ** 2
+            while reqem > 0:
+                son_reqem = reqem % 10
+                cem += son_reqem * son_reqem
+                reqem = reqem // 10
             return cem
 
-
 netice = reqemlerin_kvadrat_cemi()
-print(f"cavab {netice}")
+print(f"Cavab: {netice}")
