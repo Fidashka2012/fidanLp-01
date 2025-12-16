@@ -434,20 +434,20 @@
 
 # task 38 yazammirammm
 #task 39
-def reqemlerin_kvadrat_cemi():
-    while True:
-        deyer = input("Bir reqem daxil et: ")
+# def reqemlerin_kvadrat_cemi():
+#     while True:
+#         deyer = input("Bir reqem daxil et: ")
 
-        if not deyer.isdigit():
-            print("Xeta! Zəhmət olmasa yalnız reqem daxil et.")
-        else:
-            reqem = int(deyer)
-            cem = 0
-            while reqem > 0:
-                son_reqem = reqem % 10
-                cem += son_reqem * son_reqem
-                reqem = reqem // 10
-            return cem
+#         if not deyer.isdigit():
+#             print("Xeta! Zəhmət olmasa yalnız reqem daxil et.")
+#         else:
+#             reqem = int(deyer)
+#             cem = 0
+#             while reqem > 0:
+#                 son_reqem = reqem % 10
+#                 cem += son_reqem * son_reqem
+#                 reqem = reqem // 10
+#             return cem
 
-netice = reqemlerin_kvadrat_cemi()
-print(f"Cavab: {netice}")
+# netice = reqemlerin_kvadrat_cemi()
+# print(f"Cavab: {netice}")
