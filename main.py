@@ -525,7 +525,7 @@ def random_password():
 
     password = ""
 
-    # mütləq olanlar
+    
     password += upper[random.randint(0, len(upper) - 1)]
     password += lower[random.randint(0, len(lower) - 1)]
     password += digits[random.randint(0, len(digits) - 1)]
