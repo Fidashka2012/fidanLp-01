@@ -451,3 +451,93 @@
 
 # netice = reqemlerin_kvadrat_cemi()
 # print(f"Cavab: {netice}")
+
+# mehsullar = {}
+
+# def mehsul_elave_et():
+#     ad = input("Mehsulun adini daxil edin: ")
+#     say = int(input("Mehsulun sayini daxil edin: "))
+
+#     if ad in mehsullar:
+#         mehsullar[ad] += say
+#     else:
+#         mehsullar[ad] = say
+
+
+# def butun_mehsullara_bax():
+#     if not mehsullar:
+#         print("Mehsul yoxdur.")
+#     else:
+#         for ad, say in mehsullar.items():
+#             print(f"{ad}  ->  {say} eded")
+
+
+# def mehsul_sil():
+#     ad = input("Silinecek mehsulun adini daxil edin: ")
+#     say = int(input("Silinecek sayi daxil edin: "))
+
+#     if ad in mehsullar:
+#         if mehsullar[ad] > say:
+#             mehsullar[ad] -= say
+#         elif mehsullar[ad] == say:
+#             del mehsullar[ad]
+#         else:
+#             print("Bu qeder mehsul yoxdur.")
+#     else:
+#         print("Bele mehsul tapilmadi.")
+
+
+# def menu():
+#     while True:
+#         print("\n1. Mehsul elave et")
+#         print("2. Butun mehsullara baxmaq")
+#         print("3. Mehsul silmek")
+#         print("4. Exit")
+
+#         secim = input("Seciminizi daxil edin: ")
+
+#         if secim == "1":
+#             mehsul_elave_et()
+#         elif secim == "2":
+#             butun_mehsullara_bax()
+#         elif secim == "3":
+#             mehsul_sil()
+#         elif secim == "4":
+#             print("yeri ged burdan sene mohtac deyilem Allah seni birde menim qarsime cixartmasin")
+#             break
+#         else:
+#             print("Yanlis secim!")
+
+
+# menu()
+
+
+#task parola
+import random
+
+def random_password():
+    length = 16
+
+    upper = "ABCDEFGHIJKLMNOPQRSTUVWXYZ"
+    lower = "abcdefghijklmnopqrstuvwxyz"
+    digits = "0123456789"
+    special = "!?$@"
+
+    password = ""
+
+    # mütləq olanlar
+    password += upper[random.randint(0, len(upper) - 1)]
+    password += lower[random.randint(0, len(lower) - 1)]
+    password += digits[random.randint(0, len(digits) - 1)]
+    password += special[random.randint(0, len(special) - 1)]
+
+    all_chars = upper + lower + digits + special
+
+    while len(password) < length:
+        password += all_chars[random.randint(0, len(all_chars) - 1)]
+
+    return password
+
+print(random_password())
+
+
