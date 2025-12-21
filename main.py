@@ -513,31 +513,44 @@
 
 
 #task parola
-import random
+# import random
 
-def random_password():
-    length = 16
+# def random_password():
+#     length = 16
 
-    upper = "ABCDEFGHIJKLMNOPQRSTUVWXYZ"
-    lower = "abcdefghijklmnopqrstuvwxyz"
-    digits = "0123456789"
-    special = "!?$@"
+#     upper = "ABCDEFGHIJKLMNOPQRSTUVWXYZ"
+#     lower = "abcdefghijklmnopqrstuvwxyz"
+#     digits = "0123456789"
+#     special = "!?$@"
 
-    password = ""
+#     password = ""
 
     
-    password += upper[random.randint(0, len(upper) - 1)]
-    password += lower[random.randint(0, len(lower) - 1)]
-    password += digits[random.randint(0, len(digits) - 1)]
-    password += special[random.randint(0, len(special) - 1)]
+#     password += upper[random.randint(0, len(upper) - 1)]
+#     password += lower[random.randint(0, len(lower) - 1)]
+#     password += digits[random.randint(0, len(digits) - 1)]
+#     password += special[random.randint(0, len(special) - 1)]
 
-    all_chars = upper + lower + digits + special
+#     all_karakters = upper + lower + digits + special
 
-    while len(password) < length:
-        password += all_chars[random.randint(0, len(all_chars) - 1)]
+#     while len(password) < length:
+#         password += all_karakters[random.randint(0, len(all_karakters) - 1)]
 
-    return password
+#     return password
 
-print(random_password())
+# print(random_password())
 
 
+# task40
+
+try:
+    reqem = int(input("reqem yaz uremm: "))
+
+    if reqem == 0:
+        print("Sifir yazmada adamsan")
+    else:
+        cavab = 100 / reqem
+        print("cavabivuzzz:", cavab)
+
+except ValueError:
+    print("sen neter adamsaneeee  duzgun reqem daxil ele yoxsa.....")
