@@ -544,13 +544,14 @@
 # task40
 
 try:
-    reqem = int(input("reqem yaz uremm: "))
+    reqem = int(input("reqem yaz uremmm: "))
+    cavab = 100 / reqem
+    print("cavabuvuzz:", cavab)
 
-    if reqem == 0:
-        print("Sifir yazmada adamsan")
-    else:
-        cavab = 100 / reqem
-        print("cavabivuzzz:", cavab)
+except ZeroDivisionError:
+    print("Sifir yazma urem")
 
 except ValueError:
-    print("sen neter adamsaneeee  duzgun reqem daxil ele yoxsa.....")
+    print("insan kimi reqem ele......")
+
+#task41
