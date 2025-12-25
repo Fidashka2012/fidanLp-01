@@ -543,15 +543,27 @@
 
 # task40
 
-try:
-    reqem = int(input("reqem yaz uremmm: "))
-    cavab = 100 / reqem
-    print("cavabuvuzz:", cavab)
+# try:
+#     reqem = int(input("reqem yaz uremmm: "))
+#     cavab = 100 / reqem
+#     print("cavabuvuzz:", cavab)
 
-except ZeroDivisionError:
-    print("Sifir yazma urem")
+# except ZeroDivisionError:
+#     print("Sifir yazma urem")
 
-except ValueError:
-    print("insan kimi reqem ele......")
+# except ValueError:
+#     print("insan kimi reqem ele......")
 
 #task41
+try:
+    a = int(input("Birinci ədədi daxil et: "))
+    b = int(input("İkinci ədədi daxil et: "))
+
+    javab = a / b
+    print("javabivizcix:", javab)
+
+except ZeroDivisionError:
+    print("erorcuk: Sifira bolme ay urem!")
+
+except ValueError:
+    print("erorcux: adam kimi reqem yaz ay urem")
