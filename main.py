@@ -452,64 +452,64 @@
 # netice = reqemlerin_kvadrat_cemi()
 # print(f"Cavab: {netice}")
 
-# mehsullar = {}
+mehsullar = {}
 
-# def mehsul_elave_et():
-#     ad = input("Mehsulun adini daxil edin: ")
-#     say = int(input("Mehsulun sayini daxil edin: "))
+def mehsul_elave_et():
+    ad = input("Mehsulun adini daxil edin: ")
+    say = int(input("Mehsulun sayini daxil edin: "))
 
-#     if ad in mehsullar:
-#         mehsullar[ad] += say
-#     else:
-#         mehsullar[ad] = say
-
-
-# def butun_mehsullara_bax():
-#     if not mehsullar:
-#         print("Mehsul yoxdur.")
-#     else:
-#         for ad, say in mehsullar.items():
-#             print(f"{ad}  ->  {say} eded")
+    if ad in mehsullar:
+        mehsullar[ad] += say
+    else:
+        mehsullar[ad] = say
 
 
-# def mehsul_sil():
-#     ad = input("Silinecek mehsulun adini daxil edin: ")
-#     say = int(input("Silinecek sayi daxil edin: "))
-
-#     if ad in mehsullar:
-#         if mehsullar[ad] > say:
-#             mehsullar[ad] -= say
-#         elif mehsullar[ad] == say:
-#             del mehsullar[ad]
-#         else:
-#             print("Bu qeder mehsul yoxdur.")
-#     else:
-#         print("Bele mehsul tapilmadi.")
+def butun_mehsullara_bax():
+    if not mehsullar:
+        print("Mehsul yoxdur.")
+    else:
+        for ad, say in mehsullar.items():
+            print(f"{ad}  ->  {say} eded")
 
 
-# def menu():
-#     while True:
-#         print("\n1. Mehsul elave et")
-#         print("2. Butun mehsullara baxmaq")
-#         print("3. Mehsul silmek")
-#         print("4. Exit")
+def mehsul_sil():
+    ad = input("Silinecek mehsulun adini daxil edin: ")
+    say = int(input("Silinecek sayi daxil edin: "))
 
-#         secim = input("Seciminizi daxil edin: ")
-
-#         if secim == "1":
-#             mehsul_elave_et()
-#         elif secim == "2":
-#             butun_mehsullara_bax()
-#         elif secim == "3":
-#             mehsul_sil()
-#         elif secim == "4":
-#             print("yeri ged burdan sene mohtac deyilem Allah seni birde menim qarsime cixartmasin")
-#             break
-#         else:
-#             print("Yanlis secim!")
+    if ad in mehsullar:
+        if mehsullar[ad] > say:
+            mehsullar[ad] -= say
+        elif mehsullar[ad] == say:
+            del mehsullar[ad]
+        else:
+            print("Bu qeder mehsul yoxdur.")
+    else:
+        print("Bele mehsul tapilmadi.")
 
 
-# menu()
+def menu():
+    while True:
+        print("\n1. Mehsul elave et")
+        print("2. Butun mehsullara baxmaq")
+        print("3. Mehsul silmek")
+        print("4. Exit")
+
+        secim = input("Seciminizi daxil edin: ")
+
+        if secim == "1":
+            mehsul_elave_et()
+        elif secim == "2":
+            butun_mehsullara_bax()
+        elif secim == "3":
+            mehsul_sil()
+        elif secim == "4":
+            print("yeri ged burdan sene mohtac deyilem Allah seni birde menim qarsime cixartmasin")
+            break
+        else:
+            print("Yanlis secim!")
+
+
+menu()
 
 
 #task parola
@@ -545,25 +545,63 @@
 
 # try:
 #     reqem = int(input("reqem yaz uremmm: "))
-#     cavab = 100 / reqem
-#     print("cavabuvuzz:", cavab)
+# #     cavab = 100 / reqem
+# #     print("cavabuvuzz:", cavab)
+
+# # except ZeroDivisionError:
+# #     print("Sifir yazma urem")
+
+# # except ValueError:
+# #     print("insan kimi reqem ele......")
+
+# #task41
+# try:
+#     a = int(input("Birinci ədədi daxil et: "))
+#     b = int(input("İkinci ədədi daxil et: "))
+
+#     javab = a / b
+#     print("javabivizcix:", javab)
 
 # except ZeroDivisionError:
-#     print("Sifir yazma urem")
+#     print("erorcuk: Sifira bolme ay urem!")
 
 # except ValueError:
-#     print("insan kimi reqem ele......")
+#     print("erorcux: adam kimi reqem yaz ay urem")
 
-#task41
-try:
-    a = int(input("Birinci ədədi daxil et: "))
-    b = int(input("İkinci ədədi daxil et: "))
+# #task 42
+# try:
+#     reqem = int(input("reqem yaz ay urem: "))
+#     print("Daxil olunan reqem budu ay urem:", reqem)
 
-    javab = a / b
-    print("javabivizcix:", javab)
+# except ValueError:
+#     print("adam kimi reqem yaz ay urem")
 
-except ZeroDivisionError:
-    print("erorcuk: Sifira bolme ay urem!")
+# #task 43
 
-except ValueError:
-    print("erorcux: adam kimi reqem yaz ay urem")
+# my_dict = {
+#     "alma": 3,
+#     "armud": 5,
+#     "banan": 7
+# }
+
+
+# key = input("Acar daxil edin: ")
+
+# try:
+#     value = my_dict[key]
+# except KeyError:
+#     print("Xeta: bele bir acar lughetde yoxdur.")
+# else:
+#     print(f"Daxil etdiyiniz acarin deyer: {value}")
+
+
+# #task 44
+
+# s = input("eded daxil ele ay urem: ")
+
+# try:
+#     eded = int(s)
+# except ValueError:
+#     print("bu reqem deil axi urem")
+# else:
+#     print("javab:", eded)
