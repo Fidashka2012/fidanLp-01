@@ -452,64 +452,64 @@
 # netice = reqemlerin_kvadrat_cemi()
 # print(f"Cavab: {netice}")
 
-mehsullar = {}
+# mehsullar = {}
 
-def mehsul_elave_et():
-    ad = input("Mehsulun adini daxil edin: ")
-    say = int(input("Mehsulun sayini daxil edin: "))
+# def mehsul_elave_et():
+#     ad = input("Mehsulun adini daxil edin: ")
+#     say = int(input("Mehsulun sayini daxil edin: "))
 
-    if ad in mehsullar:
-        mehsullar[ad] += say
-    else:
-        mehsullar[ad] = say
-
-
-def butun_mehsullara_bax():
-    if not mehsullar:
-        print("Mehsul yoxdur.")
-    else:
-        for ad, say in mehsullar.items():
-            print(f"{ad}  ->  {say} eded")
+#     if ad in mehsullar:
+#         mehsullar[ad] += say
+#     else:
+#         mehsullar[ad] = say
 
 
-def mehsul_sil():
-    ad = input("Silinecek mehsulun adini daxil edin: ")
-    say = int(input("Silinecek sayi daxil edin: "))
-
-    if ad in mehsullar:
-        if mehsullar[ad] > say:
-            mehsullar[ad] -= say
-        elif mehsullar[ad] == say:
-            del mehsullar[ad]
-        else:
-            print("Bu qeder mehsul yoxdur.")
-    else:
-        print("Bele mehsul tapilmadi.")
+# def butun_mehsullara_bax():
+#     if not mehsullar:
+#         print("Mehsul yoxdur.")
+#     else:
+#         for ad, say in mehsullar.items():
+#             print(f"{ad}  ->  {say} eded")
 
 
-def menu():
-    while True:
-        print("\n1. Mehsul elave et")
-        print("2. Butun mehsullara baxmaq")
-        print("3. Mehsul silmek")
-        print("4. Exit")
+# def mehsul_sil():
+#     ad = input("Silinecek mehsulun adini daxil edin: ")
+#     say = int(input("Silinecek sayi daxil edin: "))
 
-        secim = input("Seciminizi daxil edin: ")
-
-        if secim == "1":
-            mehsul_elave_et()
-        elif secim == "2":
-            butun_mehsullara_bax()
-        elif secim == "3":
-            mehsul_sil()
-        elif secim == "4":
-            print("yeri ged burdan sene mohtac deyilem Allah seni birde menim qarsime cixartmasin")
-            break
-        else:
-            print("Yanlis secim!")
+#     if ad in mehsullar:
+#         if mehsullar[ad] > say:
+#             mehsullar[ad] -= say
+#         elif mehsullar[ad] == say:
+#             del mehsullar[ad]
+#         else:
+#             print("Bu qeder mehsul yoxdur.")
+#     else:
+#         print("Bele mehsul tapilmadi.")
 
 
-menu()
+# def menu():
+#     while True:
+#         print("\n1. Mehsul elave et")
+#         print("2. Butun mehsullara baxmaq")
+#         print("3. Mehsul silmek")
+#         print("4. Exit")
+
+#         secim = input("Seciminizi daxil edin: ")
+
+#         if secim == "1":
+#             mehsul_elave_et()
+#         elif secim == "2":
+#             butun_mehsullara_bax()
+#         elif secim == "3":
+#             mehsul_sil()
+#         elif secim == "4":
+#             print("yeri ged burdan sene mohtac deyilem Allah seni birde menim qarsime cixartmasin")
+#             break
+#         else:
+#             print("Yanlis secim!")
+
+
+# menu()
 
 
 #task parola
@@ -607,54 +607,54 @@ menu()
 #     print("javab:", eded)
 
 # # task 45
-class Product:
-    def __init__(self, name, count):
-        self.product_name = name
-        self.product_count = count
+# class Product:
+#     def __init__(self, name, count):
+#         self.product_name = name
+#         self.product_count = count
 
-products = [Product("Iphone", 10), Product("Samsung", 20)]
+# products = [Product("Iphone", 10), Product("Samsung", 20)]
 
-def add_product():
-    new_product_name = input("Mehsulun adını daxil edin: ")
-    new_product_count = int(input("Mehsulun sayını daxil edin: "))
+# def add_product():
+#     new_product_name = input("Mehsulun adını daxil edin: ")
+#     new_product_count = int(input("Mehsulun sayını daxil edin: "))
 
-    for product in products:
-        if product.product_name.lower() == new_product_name.lower():
-            product.product_count += new_product_count
-            return
+#     for product in products:
+#         if product.product_name.lower() == new_product_name.lower():
+#             product.product_count += new_product_count
+#             return
 
-    products.append(Product(new_product_name, new_product_count))
+#     products.append(Product(new_product_name, new_product_count))
 
-def show_all_products():
-    for product in products:
-        print(f"{product.product_name}  -->  {product.product_count}")
+# def show_all_products():
+#     for product in products:
+#         print(f"{product.product_name}  -->  {product.product_count}")
 
-def delete_product():
-    name = input("Silmek istediyiniz mehsulun adini daxil edin: ")
-    for product in products:
-        if product.product_name.lower() == name.lower():
-            products.remove(product)
-            return
+# def delete_product():
+#     name = input("Silmek istediyiniz mehsulun adini daxil edin: ")
+#     for product in products:
+#         if product.product_name.lower() == name.lower():
+#             products.remove(product)
+#             return
 
-def menu():
-    while True:
-        print("1. Mehsul elave etmek\n2. Butun mehsullari gostermek\n3. Mehsul silmek\n4. Cixis etmek")
-        try:
-            selection = int(input("Zehmet olmasa secim edin: "))
-        except ValueError:
-            continue
+# def menu():
+#     while True:
+#         print("1. Mehsul elave etmek\n2. Butun mehsullari gostermek\n3. Mehsul silmek\n4. Cixis etmek")
+#         try:
+#             selection = int(input("Zehmet olmasa secim edin: "))
+#         except ValueError:
+#             continue
 
-        match selection:
-            case 1:
-                add_product()
-            case 2:
-                show_all_products()
-            case 3:
-                delete_product()
-            case 4:
-                break
+#         match selection:
+#             case 1:
+#                 add_product()
+#             case 2:
+#                 show_all_products()
+#             case 3:
+#                 delete_product()
+#             case 4:
+#                 break
 
-menu()
+# menu()
 
 # #task 46
 # class Product:
@@ -709,3 +709,22 @@ menu()
 #                 break
 
 # menu()
+
+#task47 
+
+# class dog:
+#     ad: None
+#     yash: None
+#     isfriendly: None
+
+# animal = dog()
+
+# animal.ad = 'Cookie'
+# animal.yash = 3
+# animal.isfriendly = 'Of Course!!!'
+
+# print(animal.ad)
+# print(animal.yash)
+# print(animal.isfriendly)  
+
+#task 48
