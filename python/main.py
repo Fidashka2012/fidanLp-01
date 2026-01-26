@@ -365,7 +365,7 @@ anbar_yoxlama(alinan)
 #         else:
 #             print("stitch kimii!!!")
 #             print(f"{cehd_sayi} cehde tapdin")
-#             break
+#             break     
 
 # tapda_day()
 
