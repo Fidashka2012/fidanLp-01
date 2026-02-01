@@ -526,8 +526,7 @@ margin-top: 64px;
 }
 
 .newsletter-container {
-    justify-content: center;
-    display: flex;
+    margin: 0 auto;
     background-color: #000000;
     width: 1200px;
     border-radius: 20px;
@@ -535,7 +534,7 @@ margin-top: 64px;
 }
 
 .newsletter-content {
-  
+
     display: flex;
     justify-content: space-between;
     align-items: center;
