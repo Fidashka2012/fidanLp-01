@@ -441,3 +441,153 @@ justify-content: center;
 align-items: center;
 margin-top: 64px;
 }
+
+.product-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    width: 100%;
+    max-width: 1100px;
+}
+
+.product-card {
+    display: flex;
+    flex-direction: column;
+}
+
+.image-box {
+    background-color: #F0EEED;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    aspect-ratio: 1 / 1.1;
+    margin-bottom: 12px;
+    overflow: hidden;
+}
+
+.image-box img {
+    max-width: 85%;
+    height: auto;
+    object-fit: contain;
+}
+
+.title {
+    font-size: 16px;
+    font-weight: 700;
+    margin-bottom: 6px;
+    color: #000;
+    text-transform: capitalize;
+}
+
+.rating {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    margin-bottom: 8px;
+}
+
+.stars {
+    color: #FFAD33;
+    font-size: 14px;
+}
+
+.score {
+    font-size: 12px;
+    color: #666;
+}
+
+.price-row {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.price {
+    font-size: 22px;
+    font-weight: 800;
+    color: #000;
+}
+
+.old-price {
+    font-size: 20px;
+    font-weight: 700;
+    color: #999;
+    text-decoration: line-through;
+}
+
+.badge {
+    background-color: #FFEBEB;
+    color: #FF3333;
+    padding: 3px 10px;
+    border-radius: 20px;
+    font-size: 11px;
+    font-weight: bold;
+}
+
+.newsletter-container {
+    justify-content: center;
+    display: flex;
+    background-color: #000000;
+    width: 1200px;
+    border-radius: 20px;
+    padding: 40px 60px;
+}
+
+.newsletter-content {
+  
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.newsletter-content h2 {
+    color: #ffffff;
+    font-size: 36px;
+    font-weight: 900;
+    margin: 0;
+    width: 550px;
+    line-height: 1.1;
+}
+
+.newsletter-form {
+  
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+    width: 350px;
+}
+
+.input-group {
+  
+    background-color: #ffffff;
+    border-radius: 50px;
+    padding: 14px 25px;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.icon {
+    color: #888;
+    font-size: 20px;
+}
+
+.input-group input {
+    border: none;
+    outline: none;
+    font-size: 16px;
+    width: 100%;
+    color: #000;
+}
+
+.subscribe-btn {
+    background-color: #ffffff;
+    color: #000000;
+    border: none;
+    padding: 14px;
+    border-radius: 50px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+}
