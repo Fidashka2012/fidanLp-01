@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="az">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Axtarış Səhifəsi</title>
+<style>
+    body {
+        margin: 0;
+        font-family: Arial, sans-serif;
+        background-image: url('https://images8.alphacoders.com/136/thumb-1920-1363459.png'); /* background image */
+        background-size: cover;
+        background-position: center;
+        background-attachment: fixed;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    /* Yuxarı menyu sahəsi */
+    .top-bar {
+        width: 100%;
+        padding: 10px 30px;
+        background-color: rgba(241,241,241,0.9);
+        box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        position: fixed;
+        top: 0;
+        left: 0;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        z-index: 1000;
+    }
+
+    /* Search bar tərzi */
+    .search-container {
+        width: 50%;
+        display: flex;
+        align-items: center;
+        background-color: white;
+        border: 1px solid #ccc;
+        border-radius: 25px;
+        padding: 5px 10px;
+        box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+    }
+
+    .search-container img {
+        width: 24px;
+        height: 24px;
+        margin-right: 10px;
+    }
+
+    .search-container input {
+        flex: 1;
+        padding: 8px 10px;
+        border: none;
+        outline: none;
+        font-size: 16px;
+    }
+
+    .search-container .search-icon {
+        width: 20px;
+        height: 20px;
+        margin-left: 10px;
+        cursor: pointer;
+    }
+
+    /* Profil tərzi */
+    .profile {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        font-weight: bold;
+        cursor: pointer;
+    }
+
+    .profile span {
+        white-space: nowrap;
+    }
+
+    .profile-circle {
+        width: 40px;
+        height: 40px;
+        background-color: #4285F4; /* Google blue */
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: white;
+        font-weight: bold;
+        font-size: 18px;
+        flex-shrink: 0;
+    }
+
+    /* Mesaj üçün */
+    #message {
+        margin-top: 140px; /* Yuxarıda input üçün boşluq */
+        font-size: 18px;
+        color: aqua;
+        font-weight: bold;
+        text-shadow: 1px 1px 2px rgba(0,0,0,0.5);
+    }
+
+</style>
+</head>
+<body>
+
+<div class="top-bar">
+    <div class="search-container">
+        <!-- Chrome logo -->
+        <img src="https://upload.wikimedia.org/wikipedia/commons/8/87/Google_Chrome_icon_%282011%29.png" alt="Chrome Logo">
+        <!-- Input -->
+        <input type="text" id="searchInput" placeholder="Axtar..." onkeydown="handleKey(event)">
+        <!-- Lupa icon -->
+        <img src="https://cdn-icons-png.flaticon.com/512/622/622669.png" class="search-icon" alt="Search Icon" onclick="search()">
+    </div>
+
+    <!-- Profil -->
+    <div class="profile">
+        <span>Fidan Fatili</span>
+        <div class="profile-circle">F</div>
+    </div>
+</div>
+
+<div id="message"></div>
+
+<script>
+function handleKey(e) {
+    if(e.key === "Enter") {
+        search();
+    }
+}
+
+function search() {
+    const input = document.getElementById('searchInput').value.trim();
+    const messageDiv = document.getElementById('message');
+
+    if(input === "") {
+        messageDiv.textContent = "Zəhmət olmasa bir şey yazın!";
+    } else {
+        messageDiv.textContent = "Nəticə tapılmadı";
+    }
+}
+</script>
+
+</body>
+</html>
