@@ -10,7 +10,7 @@ console.log(yourarr[0]);
 //task3
 let arr = [1, 2, 3, 4, 5];
 
-console.log(arr[arr.length - 1]);
+console.log(arr[arr.length - 1]);  
 
 //task4
 let massiv = [10, 20, 30, 40];
@@ -40,5 +40,3 @@ console.log(fruits.length);
 //task9 yazmadim
 
 //task10 yazammadim
-
-
