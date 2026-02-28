@@ -121,4 +121,3 @@ const book = {
 book.author = "Huseyn Nagili";
 
 console.log(book);
-
