@@ -121,3 +121,34 @@ const book = {
 book.author = "Huseyn Nagili";
 
 console.log(book);
+
+//task20
+// const girl = {
+//   name: "Fidashka",
+//   surname: "Fatili",
+//   age: 14,
+//   isStudent: true
+// };
+
+// console.log(girl);
+
+
+//task 21
+// const numbers2 = [1, 2, 3, 4, 5];
+// const numbersconsole = numbers2.filter(num => num % 2 === 0);
+// console.log(numbersconsole);
+
+// //task 22 
+// const names = ["Alice", "Bob", "Charlie", "David"];
+// const namesconsole = names.filter(name => name.length > 4);
+// console.log(namesconsole);
+
+//task 23
+// const products = [
+//   { name: "Telefon", price: 150 },
+//   { name: "Laptop", price: 800 },
+//   { name: "Tablet", price: 300 }
+// ];
+
+//console.log(products);
+

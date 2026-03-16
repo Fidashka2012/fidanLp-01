@@ -1,0 +1,176 @@
+SQL-də LIKE verilənlər bazasında mətn (yazı) içində müəyyən bir hissəni və ya oxşar sözləri axtarmaq üçün istifadə olunur.
+
+Yəni biz sözü tam bilmədikdə, onun bir hissəsinə görə axtarış edə bilərik.
+
+Məsələn, cədvəldə insanların adları saxlanılır: Ali, Aysel, Murad, Samir.
+
+Əgər biz yalnız A hərfi ilə başlayan adları tapmaq istəsək belə bir sorğu yazırıq:
+
+SELECT * FROM users
+WHERE ad LIKE 'A%';
+
+Burada % işarəsi o deməkdir ki, A hərfindən sonra istənilən sayda hərf gələ bilər.
+
+Ona görə nəticədə Ali və Aysel görünəcək.
+
+% işarəsi ümumiyyətlə istənilən sayda simvolu əvəz edir.
+
+Məsələn:
+'A%' → A ilə başlayan sözlər
+'%d' → d ilə bitən sözlər
+'%ra%' → içində "ra" olan sözlər
+
+LIKE ilə istifadə olunan başqa bir işarə isə _ (underscore) işarəsidir.
+
+_ yalnız bir simvolu əvəz edir.
+
+Məsələn:
+
+SELECT * FROM users
+WHERE ad LIKE '_li';
+
+Burada _ yerinə bir hərf gəlir və nəticədə Ali tapılır.
+
+LIKE əsasən sözün başlanğıcını, sonunu və ya içində müəyyən bir hissəni tapmaq üçün istifadə olunur.
+
+Əgər yazsaq:
+WHERE ad = 'Ali'
+
+Bu yalnız tam olaraq Ali sözünü tapacaq.
+
+Amma yazsaq:
+WHERE ad LIKE 'A%'
+
+Bu A ilə başlayan bütün adları tapacaq.
+
+Qısaca desək, SQL-də LIKE mətnlərdə qismən uyğunluğa görə axtarış etmək üçün istifadə olunan operatordur.
+
+
+
+
+
+**SQL-də `ORDER BY` nədir?**
+
+`ORDER BY` SQL-də istifadə olunan bir komandadır və **verilənlər bazasından çıxan məlumatları müəyyən bir qaydaya görə sıralamaq üçün** istifadə olunur. Verilənlər bazasında məlumatlar çox vaxt qarışıq vəziyyətdə saxlanılır. Məsələn, bir cədvəldə tələbələrin adları, yaşları və qiymətləri ola bilər. Bu məlumatlar bazadan çıxarılanda hər zaman istədiyimiz qaydada görünməyə bilər.
+
+Məhz buna görə `ORDER BY` istifadə edilir. Bu komanda **məlumatları artan və ya azalan qaydada düzür** ki, nəticələri oxumaq və analiz etmək daha asan olsun.
+
+Adətən `ORDER BY` **SELECT sorğusunun sonunda** yazılır və hansı sütuna görə sıralama ediləcəyini göstərir.
+
+Ümumi quruluş belədir:
+
+SELECT sütun_adı
+FROM cədvəl_adı
+ORDER BY sütun_adı;
+
+Bu sorğu nəticələri göstərir və sonra seçilmiş sütuna görə onları sıralayır.
+
+---
+
+**Artan sıra (ASC)**
+
+`ASC` sözü **Ascending** sözünün qısaltmasıdır və **artan sıra** deməkdir. Bu o deməkdir ki, məlumatlar **kiçikdən böyüyə və ya A-dan Z-yə** doğru düzüləcək.
+
+Məsələn bir cədvəldə tələbələrin yaşları varsa və biz onları kiçikdən böyüyə sıralamaq istəyiriksə belə yazırıq:
+
+SELECT ad, yas
+FROM telebeler
+ORDER BY yas ASC;
+
+Bu sorğunun nəticəsində ən kiçik yaşlı tələbə birinci, ən böyük yaşlı tələbə isə sonda görünəcək.
+
+Əgər `ASC` yazmasaq belə, SQL avtomatik olaraq **artan sıra** qəbul edir. Yəni aşağıdakı sorğu da eyni nəticəni verəcək:
+
+SELECT ad, yas
+FROM telebeler
+ORDER BY yas;
+
+---
+
+**Azalan sıra (DESC)**
+
+`DESC` sözü **Descending** sözünün qısaltmasıdır və **azalan sıra** deməkdir. Bu zaman məlumatlar **böyükdən kiçiyə və ya Z-dən A-ya** doğru sıralanır.
+
+Məsələn tələbələri yaşa görə böyükdən kiçiyə sıralamaq üçün belə yazılır:
+
+SELECT ad, yas
+FROM telebeler
+ORDER BY yas DESC;
+
+Bu sorğuda ən böyük yaşlı tələbə birinci, ən kiçik yaşlı tələbə isə sonda göstəriləcək.
+
+---
+
+**Mətn (string) məlumatlarının sıralanması**
+
+`ORDER BY` yalnız rəqəmlər üçün deyil, **mətn məlumatları üçün də istifadə olunur**. Məsələn adları əlifba sırasına görə düzə bilərik.
+
+SELECT ad
+FROM telebeler
+ORDER BY ad;
+
+Bu sorğu nəticələri **əlifba sırası ilə (A-dan Z-yə)** göstərəcək.
+
+Əgər adları **tərs əlifba sırası ilə** göstərmək istəsək belə yazarıq:
+
+SELECT ad
+FROM telebeler
+ORDER BY ad DESC;
+
+---
+
+**Bir neçə sütuna görə sıralama**
+
+Bəzən yalnız bir sütuna görə sıralamaq kifayət etmir. Məsələn tələbələri əvvəl **soyadına görə**, sonra isə **yaşına görə** sıralamaq lazım ola bilər.
+
+Bunun üçün `ORDER BY` içində bir neçə sütun yazmaq olar.
+
+SELECT ad, soyad, yas
+FROM telebeler
+ORDER BY soyad ASC, yas DESC;
+
+Bu sorğuda belə olur:
+
+* əvvəl bütün tələbələr **soyadına görə əlifba sırası ilə** düzülür
+* əgər iki nəfərin soyadı eynidirsə, onda onlar **yaşa görə böyükdən kiçiyə** sıralanır
+
+---
+
+**Real nümunə**
+
+Tutaq ki, `telebeler` adlı cədvəldə belə məlumat var:
+
+ad | yas
+Ali | 18
+Murad | 21
+Aysel | 19
+
+Əgər belə sorğu yazsaq:
+
+SELECT ad, yas
+FROM telebeler
+ORDER BY yas;
+
+Nəticə belə olacaq:
+
+Ali – 18
+Aysel – 19
+Murad – 21
+
+Çünki yaş **kiçikdən böyüyə** sıralandı.
+
+---
+
+**Nəticə**
+
+`ORDER BY` SQL-də çox vacib komandadır və əsas məqsədi **məlumatları düzgün qaydada göstərməkdir**.
+
+Onun əsas xüsusiyyətləri bunlardır:
+
+* nəticələri sıralamaq üçün istifadə olunur
+* `ASC` artan sıra deməkdir
+* `DESC` azalan sıra deməkdir
+* həm rəqəmləri, həm də mətnləri sıralaya bilər
+* bir və ya bir neçə sütuna görə sıralama etmək mümkündür
+
+Bu komanda xüsusilə **məlumat çox olduqda onları daha rahat oxumaq və analiz etmək üçün** çox faydalıdır.

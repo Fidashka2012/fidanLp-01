@@ -727,4 +727,3 @@ anbar_yoxlama(alinan)
 # print(animal.yash)
 # print(animal.isfriendly)  
 
-#task 48
