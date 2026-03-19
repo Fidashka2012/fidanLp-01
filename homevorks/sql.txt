@@ -57,7 +57,7 @@ Məhz buna görə `ORDER BY` istifadə edilir. Bu komanda **məlumatları artan 
 
 Adətən `ORDER BY` **SELECT sorğusunun sonunda** yazılır və hansı sütuna görə sıralama ediləcəyini göstərir.
 
-Ümumi quruluş belədir:
+Ümumi quruluş belədir:  
 
 SELECT sütun_adı
 FROM cədvəl_adı
